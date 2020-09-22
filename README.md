@@ -30,7 +30,8 @@ step by step using redux untuk react
 
 
 
-----------------------------------------------------------adding redux to page components-------------------------------------------------------------------------
+----------------------------------------------------------adding redux to page components----------------------
+
 13. Untuk menggunakan redux di halaman yang sudah jadi, ada 2 cara. Yang pertama menggunakan connect atau menggunakan hooks. 
 
 14. Untuk menggunakan connect maka tahapannya adalah sebagai berikut.
