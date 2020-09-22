@@ -47,6 +47,6 @@ f.masukan pula dispatcher ke dalam property fungsi yang akan dibuat sebagai fung
 <button onClick={() => {dispatch(addCounter());}}>+</button>
 g.export default page yang telah dibuat.
 
-16. Import dan masukan halaman yang telah selesai ke file App.js sebagai react component.
+16. Import dan masukan halaman yang telah selesai ke file App.js sebagai react component
 
 
