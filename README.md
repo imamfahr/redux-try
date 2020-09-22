@@ -7,18 +7,25 @@ step by step using redux untuk react
 3. Install react redux dengan cara mengetik npm install react redux
 4. Buat folder components, pages, dan redux. Masing-masing berfungsi untuk menyimpan komponen-komponen, halaman dan komponen redux
 
------------------------------------------------------------dealing with redux folders-----------------------------------------------------------------------------
+-----------------------------------------------------------dealing with redux folders----------------
 5. Buat folder actons, reducer, dan store di dalam file redux.
+
 6. Buat file javascript di dalam folder actions (misal: counter.actions.js). File ini akan berisi actions dalam bentuk function yang berisi object , yang akan diexport dan digunakan untuk merubah state dari salah suatu komponen. Dalam file ini, value pada key type yang ada di dalam fungsi harus menggunakan tanda kutip contoh: 'INCREMENT' yang ditulis dalam huruf kapital sebagai best practice. Namun dapat juga tidak menggunakan tanda kutip namun perlu melakukan local export import dalam file terlebih dahulu. Contoh : export const INCREMENT ='INCREMENT'. Dengan ini, value dari key type tidak perlu menggunakan tanda kutip.
+
 7. Buat file javascript di dalam folder reducer (misal: counter.reducer.js). File ini akan mengimport actions yang sudah dibuat sebelumnya. File ini berisi state awal dari suatu state (initial state) yang akan dirubah dan fungsi yang berisi perintah-perintah yang akan digunakan untuk mengubah initial state. Perintah-perintah ini akan dibuat dalam bentuk fungsi yang berisi conditional operator, sehingga kita dapat memilih untuk menggunakan if else, switch ataupun ternary operator. Apapun operator yang dipilih, di pilihan terakhir perlu diberikan "default state return state" yang berguna untuk menghindari kemungkinan adanya kondisi yang tidak sesuai perintah. File ini kemudian ditutup dengan mengekspor default fungsi yang telah dibuat.
+
 8. Buat file store di dalam folder store. File ini berisi import createstore module dari redux dan objek fungsi yang diimport dari file reducer sebelumnya. Objek fungsi yang telah diimport akan menjadi property dari fungsi createstore yang telah diimport.
+
 9. Dalam file index.js import module provider  dari react redux dan juga import store dari file store yang telah dibuat sebelumnya. kemudian bungkus komponen <App /> dengan komponen <Provider store={store}> yang artinya halaman ini akan menggunakan store bernama store yang akan dibuat sebelumnya.
 
 
 
------------------------------------------------------------dealing with common react components-------------------------------------------------------------------
+-----------------------------------------------------------dealing with common react components--------------
+
 10. Buat komponen-komponen react sesuai kebutuhan di folder components.
+
 11. Buat halaman-halaman react sesuai kebutuhan di folder pages.
+
 12. Setelah komponen react jadi, import dan tempelkan react components ke dalam halaman-halaman react.
 
 
